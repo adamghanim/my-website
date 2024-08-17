@@ -1,0 +1,215 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bakery Café</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <style>
+    .btn-primary:hover, .btn-outline-secondary:hover {
+      transform: translateY(-3px); /* Move the button slightly upwards on hover */
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow on hover */
+    }
+    /* Additions for button focus effects */
+    .btn-primary:focus, .btn-outline-secondary:focus {
+      outline: none; /* Remove the default focus outline */
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow when the button is focused */
+    }
+    .feature-icon {
+      width: 4rem;
+      height: 4rem;
+      border-radius: .75rem;
+    }
+    .icon-square {
+      width: 3rem;
+      height: 3rem;
+      border-radius: .75rem;
+    }
+    .text-shadow-1 {
+      text-shadow: 0 .125rem .25rem rgba(0, 0, 0, .25);
+    }
+    .text-shadow-2 {
+      text-shadow: 0 .25rem .5rem rgba(0, 0, 0, .25);
+    }
+    .text-shadow-3 {
+      text-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .25);
+    }
+    .card-cover {
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
+    .feature-icon-small {
+      width: 3rem;
+      height: 3rem;
+    }
+    .fade-in {
+      animation: fadeIn 0.5s ease-out;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./baker3.png" alt="" height="30">Bakery Café</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="menu.php">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="px-4 pt-5 my-5 text-center border-bottom">
+    <h1 class="display-4 fw-bold text-body-emphasis">Welcome to Bakery Café</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">Discover our selection of freshly baked pastries, light breakfasts, and refreshing beverages. Experience the perfect blend of taste and atmosphere.</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+        <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3" onclick="location.href='menu.php'">Explore Our Menu</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4" onclick="location.href='#contact'">Contact Us</button>
+      </div>
+    </div>
+    <div class="overflow-hidden" style="max-height: 30vh;">
+      <div class="container px-5">
+        <img src="./baker.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Bakery Hero Image" width="700" height="500" loading="lazy">
+      </div>
+    </div>
+  </div>
+  <div class="container px-4 py-5" id="features">
+    <h2 class="pb-2 border-bottom">Why Choose Us</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <img src="./bakeryicon.png" alt="Pastries" height="56">
+        </div>
+        <h3 class="fs-2 text-body-emphasis">Delicious Pastries</h3>
+        <p>Our pastries are baked fresh daily using the finest ingredients. From croissants to muffins, we have something to satisfy every craving.</p>
+        <a href="menu.php" class="icon-link">
+          Explore Our Pastries
+          <img src="./bakeryicon.png" alt="Explore" height="30">
+        </a>
+      </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <img src="./bakeryicon.png" alt="Breakfast" height="56">
+        </div>
+        <h3 class="fs-2 text-body-emphasis">Light Breakfasts</h3>
+        <p>Start your day right with our light and healthy breakfast options, including freshly baked bread, yogurt parfaits, and more.</p>
+        <a href="menu.php" class="icon-link">
+          Check Our Breakfast Options
+          <img src="./bakeryicon.png" alt="Explore" height="30">
+        </a>
+      </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <img src="./bakeryicon.png" alt="Beverages" height="56">
+        </div>
+        <h3 class="fs-2 text-body-emphasis">Refreshing Beverages</h3>
+        <p>Our beverage selection includes freshly brewed coffee, teas, and refreshing cold drinks to complement your meal or enjoy on their own.</p>
+        <a href="menu.php" class="icon-link">
+          Discover Our Beverages
+          <img src="./bakeryicon.png" alt="Explore" height="30">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./baker.png" class="d-block w-100" alt="Pastries" >
+      </div>
+      <div class="carousel-item">
+        <img src="./bakery.jpg" class="d-block w-100" alt="Breakfast">
+      </div>
+      <div class="carousel-item">
+        <img src="./baker3.png" class="d-block w-100" alt="Beverages">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div class="container my-5">
+    <h2 class="pb-2 border-bottom">Customer Reviews</h2>
+    <div class="card mb-3">
+      <div class="card-body">
+        <h5 class="card-title">John Doe</h5>
+        <p class="card-text">The best bakery in town! Their croissants are simply amazing, and the coffee is always perfect.</p>
+        <p class="card-text"><small class="text-muted">Posted on January 15, 2023</small></p>
+      </div>
+    </div>
+    <div class="card mb-3">
+      <div class="card-body">
+        <h5 class="card-title">Jane Smith</h5>
+        <p class="card-text">I love coming here for breakfast. The atmosphere is cozy, and the food is delicious. Highly recommend!</p>
+        <p class="card-text"><small class="text-muted">Posted on February 20, 2023</small></p>
+      </div>
+    </div>
+    <div class="card mb-3">
+      <div class="card-body">
+        <h5 class="card-title">Emily Johnson</h5>
+        <p class="card-text">Great place to relax with a cup of coffee and a pastry. The staff is friendly, and the service is excellent.</p>
+        <p class="card-text"><small class="text-muted">Posted on March 10, 2023</small></p>
+      </div>
+    </div>
+    <form id="comment-form" class="mt-4">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" required>
+      </div>
+      <div class="mb-3">
+        <label for="comment" class="form-label">Comment</label>
+        <textarea class="form-control" id="comment" rows="3" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+  <footer class="bg-body-tertiary py-4 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p>&copy; 2023 Bakery Café. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <a href="#" class="me-3">Privacy Policy</a>
+          <a href="#" class="me-3">Terms of Service</a>
+          <a href="#" class="me-3">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
